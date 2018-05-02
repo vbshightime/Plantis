@@ -1,0 +1,203 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/const_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/android"
+    tools:context="com.example.webczar.plantis.Fragments.SoilMonitor">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/info_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/soil_info"
+        android:textColor="@color/colorIcons"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/temp_caption_id"
+        android:layout_width="138dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/soil_temperature_info"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/colorIcons"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/temp_info_id" />
+
+    <TextView
+        android:id="@+id/temp_info_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:layout_marginTop="8dp"
+        android:text="13"
+        android:textColor="@color/colorTextTint"
+        android:textSize="42sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_divider_water" />
+
+    <TextView
+        android:id="@+id/moist_caption_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/soil_moisture_info"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/colorIcons"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/temp_caption_id"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/temp_caption_id"
+        app:layout_constraintTop_toTopOf="@+id/moist_info_id" />
+
+    <TextView
+        android:id="@+id/moist_info_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="91"
+        android:textColor="@color/colorTextTint"
+        android:textSize="42sp"
+        app:layout_constraintEnd_toEndOf="@+id/temp_info_id"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/temp_info_id"
+        app:layout_constraintTop_toBottomOf="@+id/temp_info_id" />
+
+    <TextView
+        android:id="@+id/weather_caption_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/temperature_info"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/colorIcons"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/moist_caption_id"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/moist_caption_id"
+        app:layout_constraintTop_toTopOf="@+id/weather_info_id" />
+
+    <TextView
+        android:id="@+id/weather_info_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="23"
+        android:textColor="@color/colorTextTint"
+        android:textSize="42sp"
+        app:layout_constraintEnd_toEndOf="@+id/moist_info_id"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/moist_info_id"
+        app:layout_constraintTop_toBottomOf="@+id/moist_info_id" />
+
+    <Button
+        android:id="@+id/btn_blue_id"
+        android:layout_width="wrap_content"
+        android:layout_height="83dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_blue_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info_id" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:src="@drawable/ic_float_warte"
+        app:backgroundTint="@color/colorAccent"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn_soilrefresh_id"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_refresh"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_celcius_id"
+        app:layout_constraintStart_toEndOf="@+id/tv_celcius_id" />
+
+    <Button
+        android:id="@+id/btn_moistrefresh_id"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/ic_refresh"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_percent_id"
+        app:layout_constraintEnd_toEndOf="@+id/btn_soilrefresh_id"
+        app:layout_constraintStart_toEndOf="@+id/tv_percent_id" />
+
+    <Button
+        android:id="@+id/btn_wthrefresh_id"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_refresh"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_celcius2_id"
+        app:layout_constraintEnd_toEndOf="@+id/btn_moistrefresh_id"
+        app:layout_constraintStart_toEndOf="@+id/tv_celcius2_id" />
+
+    <TextView
+        android:id="@+id/tv_celcius_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_celcius"
+        android:textColor="@color/colorTextTint"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toBottomOf="@+id/temp_info_id"
+        app:layout_constraintStart_toEndOf="@+id/temp_info_id"
+        app:layout_constraintTop_toTopOf="@+id/temp_info_id" />
+
+    <TextView
+        android:id="@+id/tv_percent_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_percent"
+        android:textColor="@color/colorTextTint"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toBottomOf="@+id/moist_info_id"
+        app:layout_constraintStart_toEndOf="@+id/moist_info_id"
+        app:layout_constraintTop_toTopOf="@+id/moist_info_id" />
+
+    <TextView
+        android:id="@+id/tv_celcius2_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_celcius"
+        android:textColor="@color/colorTextTint"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toBottomOf="@+id/weather_info_id"
+        app:layout_constraintStart_toEndOf="@+id/weather_info_id"
+        app:layout_constraintTop_toTopOf="@+id/weather_info_id" />
+
+    <View
+        android:id="@+id/id_divider_water"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorTextTint"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_blue_id" />
+
+</android.support.constraint.ConstraintLayout>

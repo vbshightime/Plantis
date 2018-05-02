@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+ <android.support.constraint.ConstraintLayout
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+    android:background="@drawable/android1"
+     tools:context="com.example.webczar.plantis.RunWater"
+     tools:layout_editor_absoluteY="1dp"
+    >
+  <!--<android.support.v7.widget.Toolbar
+     android:id="@+id/toolbar_runWater_id"
+     android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+     android:background="@color/colorPrimary"
+     android:elevation="4dp">
+  </android.support.v7.widget.Toolbar>
+-->
+    <TextView
+      android:id="@+id/tv_moist_cap_id"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:text="@string/tv_moist_cap"
+      android:textColor="@color/colorIcons"
+      android:textSize="16sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/tv_soilTemp_cap_id" />
+
+  <TextView
+      android:id="@+id/tv_soilTemp_cap_id"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="32dp"
+      android:layout_marginTop="8dp"
+      android:text="@string/tv_soilTemp_cap"
+      android:textColor="@color/colorIcons"
+      android:textSize="16sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/id_divider_water2" />
+
+
+  <TextView
+      android:id="@+id/tv_moist_info_id"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:textColor="@color/colorTextTint"
+      android:textSize="32sp"
+      app:layout_constraintStart_toStartOf="@+id/tv_moist_cap_id"
+      app:layout_constraintTop_toBottomOf="@+id/tv_moist_cap_id" />
+
+
+  <TextView
+      android:id="@+id/tv_soilTemp_info_id"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:textColor="@color/colorTextTint"
+      android:textSize="32sp"
+      app:layout_constraintEnd_toEndOf="@+id/tv_soilTemp_cap_id"
+      app:layout_constraintTop_toBottomOf="@+id/tv_soilTemp_cap_id" />
+
+  <TextView
+      android:id="@+id/tv_weather_cap_id"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="16dp"
+      android:text="@string/tv_weather_cap"
+      android:textColor="@color/colorIcons"
+      android:textSize="16sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tv_moist_info_id" />
+
+  <TextView
+      android:id="@+id/tv_pH_cap_id"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="32dp"
+      android:layout_marginTop="16dp"
+      android:text="@string/tv_pH"
+      android:textColor="@color/colorIcons"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tv_soilTemp_info_id" />
+
+  <TextView
+      android:id="@+id/tv_weather_info_id"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:textColor="@color/colorTextTint"
+      android:textSize="32sp"
+      app:layout_constraintStart_toStartOf="@+id/tv_weather_cap_id"
+      app:layout_constraintTop_toBottomOf="@+id/tv_weather_cap_id" />
+
+  <TextView
+      android:id="@+id/tv_ph_info_id"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:textColor="@color/colorTextTint"
+      android:textSize="32sp"
+      app:layout_constraintEnd_toEndOf="@+id/tv_pH_cap_id"
+      app:layout_constraintTop_toBottomOf="@+id/tv_pH_cap_id" />
+
+ <Spinner
+     android:id="@+id/spin_state_id"
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="32dp"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.0"
+     app:layout_constraintLeft_toLeftOf="parent"
+     app:layout_constraintRight_toRightOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+      android:id="@+id/btn_runWater_id"
+      android:layout_width="80dp"
+      android:layout_height="80dp"
+      android:layout_marginTop="16dp"
+      android:background="@drawable/drop_on"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/spin_state_id" />
+
+
+  <View
+      android:id="@+id/id_divider_water"
+      android:layout_width="wrap_content"
+      android:layout_height="1dp"
+      android:layout_marginTop="8dp"
+      android:background="@color/colorTextTint"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tv_weather_info_id" />
+
+  <View
+      android:id="@+id/id_divider_water2"
+      android:layout_width="wrap_content"
+      android:layout_height="1dp"
+      android:layout_marginEnd="8dp"
+      android:layout_marginRight="16dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="32dp"
+      android:background="@color/colorTextTint"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/btn_runWater_id" />
+
+  <View
+      android:id="@+id/id_divider_water3"
+      android:layout_width="wrap_content"
+      android:layout_height="1dp"
+      android:layout_marginBottom="8dp"
+      android:layout_marginEnd="8dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="8dp"
+      android:background="@color/colorTextTint"
+      app:layout_constraintBottom_toTopOf="@+id/tv_weather_cap_id"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tv_soilTemp_info_id" />
+
+  </android.support.constraint.ConstraintLayout>

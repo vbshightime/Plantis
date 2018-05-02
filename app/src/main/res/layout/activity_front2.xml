@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.webczar.plantis.FrontActivity"
+    style="@style/AppTheme.NoActionBar"
+    android:background="@color/colorPrimaryDark">
+
+    <LinearLayout
+        android:layout_width="82dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="188dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/ic_front_icon"></View>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="276dp"
+        android:layout_height="197dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.532">
+
+        <View
+            android:layout_width="280dp"
+            android:layout_height="197dp"
+            android:background="@drawable/ic_action_name" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

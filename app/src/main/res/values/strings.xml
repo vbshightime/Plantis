@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Plantis</string>
+    <string name="alert_message">Click Picture or choose from gallery</string>
+    <string name="alert_title">Cloud Vision</string>
+    <string name="alert_pos_btn">Click Picture</string>
+    <string name="alert_neg_btn">Open Gallery</string>
+    <string name="gallery_select">Select your Picture</string>
+    <string name="image_picker_error">Error Loading Image</string>
+    <string name="my_api_key">AIzaSyBlkfP8e_JV0pPjcVq0xrlu7SSqB3A80GA</string>
+    <string name="title_activity_navigate">NavigateActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="soil_Monitor">Soil Monitor</string>
+    <string name="saved_plants">Saved Plants</string>
+    <string name="search">Search</string>
+    <string name="plant_shopee">Plant Shopee</string>
+    <string name="soil_info">Your Soil Doctor, It provides information about the condition of your plants</string>
+    <string name="tv_percent">\u0025</string>
+    <string name="tv_celcius">℃</string>
+    <string name="tv_moist_cap">Moisture</string>
+    <string name="tv_soilTemp_cap">Soil Temperature</string>
+    <string name="tv_weather_cap">Weather</string>
+    <string name="tv_pH">pouvoir hydrogène</string>
+    <string name="soil_temperature_info">Soil Temperature</string>
+    <string name="temperature_info">Temperature</string>
+    <string name="soil_moisture_info">Soil Moisture</string>
+    <string-array name="spinner_enteries">
+        <item> Arunachal Pradesh (Itanagar)</item>
+        <item>Assam (Dispur)</item>
+        <item>Bihar (Patna)</item>
+        <item>Chhattisgarh (Raipur)</item>
+        <item>Goa (Panaji)</item>
+        <item>Gujarat (Gandhinagar)</item>
+        <item>Haryana (Chandigarh)</item>
+        <item>Himachal Pradesh (Shimla)</item>
+        <item>Jammu and Kashmir</item>
+        <item>Jharkhand (Ranchi)</item>
+        <item>Karnataka (Bangalore)</item>
+        <item>Kerala (Thiruvananthapuram)</item>
+        <item>Madhya Pradesh (Bhopal)</item>
+        <item>Maharashtra (Mumbai)</item>
+        <item>Manipur (Imphal)</item>
+        <item>Meghalaya (Shillong)</item>
+        <item>Mizoram (Aizawl)</item>
+        <item>Nagaland (Kohima)</item>
+        <item>Odisha (Bhubaneshwar)</item>
+        <item>Punjab (Chandigarh)</item>
+        <item>Rajasthan (Jaipur)</item>
+        <item>Sikkim (Gangtok)</item>
+        <item>Tamil Nadu (Chennai)</item>
+        <item>Telangana (Hyderabad)</item>
+        <item>Tripura (Agartala)</item>
+        <item>Uttarakhand (Dehradun)</item>
+        <item>Uttar Pradesh (Lucknow)</item>
+        <item>West Bengal (Kolkata)</item>
+    </string-array>
+    <string name="title_activity_front_screen">FrontScreen</string>
+
+
+</resources>
