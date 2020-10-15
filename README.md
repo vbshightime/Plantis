@@ -9,11 +9,10 @@ We have also employed Machine Learning on it. We have used Google Cloud vision A
 
 ## Gallery
   ![alt text](app4.png "Title")
-  ![alt text](P_20180502_110244_LL.jpg)
 
 ## Future Enhancement
 * Create a dataset containing images of paddy pathology
-* Train the dataset and Creat a Machine Learning model
+* Train the dataset and Create a Machine Learning model
 * Feed the machine learning model to Android and predict the diseases in paddy.
 * So just by clicking the picture of diseased paddy plant, we can predict the disease.
 * One more model is to be trained containing Soil Moisture and Soil temperature regimes.
